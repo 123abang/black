@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap">
+  <title>BLACK SANTA</title>
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/index1.css">
+  <link rel="stylesheet" href="css/index2.css">
+  <link rel="stylesheet" href="css/index3.css">
+  <link rel="stylesheet" href="css/index4.css">
+  <link rel="stylesheet" href="css/index5.css">
+  <link rel="stylesheet" href="css/index6.css">
+  <link rel="stylesheet" href="css/index7.css">
+  <link rel="stylesheet" href="css/index8.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/logo.css">
+  <link rel="stylesheet" href="css/dance.css">
+  <link rel="stylesheet" href="css/dex.css">
+  <link rel="stylesheet" href="css/FAQ.CSS">
+
+  <style>
+    .wallet-address {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 2px solid black;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      max-width: 90%;
+      margin: 0 auto;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .wallet-address:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .wallet-address span {
+      font-size: 1.2em;
+      color: black;
+      word-break: break-all;
+      text-align: center;
+    }
+    .copy-icon {
+      cursor: pointer;
+      font-size: 1.5em;
+      color: black;
+      margin-top: 10px;
+    }
+    .alert-box {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo"><img src="images/black.jpeg" alt="" width="100px"></div> <span id="logo">Black Santa</span>
+    <ul class="nav-list"></ul>
+    <div class="menu-icon" onclick="openSidebar()">&#9776;</div>
+  </nav>
+
+  <div id="sidebar" class="sidebar">
+    <div class="close-btn" onclick="closeSidebar()">&times;</div>
+  </div>
+
+  <section class="welcome-section">
+    <h1>WELCOME TO Black Santa</h1>
+    <div class="image-circle">
+      <img src="images/black.jpeg" alt="Black Santa Image">
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h1>About Black Santa <i class="fas fa-paw"></i></h1>
+    <p>Black Santa was originally launched as Black Santa Coin in July 2024, and as of September 16, 2024, we’ve officially completed our exciting rebranding to Black Santa! This evolution marks the next phase in our mission to bring joy, build a strong brand, and foster an engaged community within the crypto world. While our name and look have evolved, our core values of fun, community, and positive impact remain stronger than ever.</p>
+  </section>
+
+  <!-- <a href="https://assuredefi.com/projects/blacksanta/" style="text-decoration: none;">
+    <section class="kyc-section">
+      <h1>KYC Certification</h1>
+      <img src="images/certification.jpg" alt="KYC Certification Image" id="img">
+    </section>
+  </a> -->  <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br>
+  <section class="tokenomics-section">
+  <h1>🐾 Tokenomics</h1>
+  <div class="pie-chart"></div>
+  <div class="legend">
+
+    <div class="legend-item">
+      <div class="legend-color" style="background-color: #ffcd56;"></div>
+      🐾 DEX Liquidity Pool - 45%
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background-color: #36a2eb;"></div>
+      🐾 CEX Liquidity - 20%
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background-color: #4bc0c0;"></div>
+      🐾 Team Allocation - 7%
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background-color: #ff6384;"></div>
+      🐾 Community (Airdrops/Contests) - 7%
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background-color: #ff66de;"></div>
+      🐾 Marketing - 7%
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background-color: green;"></div>
+      🐾 Treasury Wallet - 7%
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background-color: #9966ff;"></div>
+      🐾 Charity - 7%
+    </div>
+  </div>
+</section>
+
+
+  
+
+  <!-- <section class="faq-container"> -->
+    <center>
+      <h1 class="faq-header" style="color: black; text-shadow: 2px 2px 4px #aaa;">Black Santa FAQ</h1>
+    </center>
+    <div class="faq-item" style="background-color: white; color: black;">
+      <div class="faq-question">What is Black Santa?</div>
+      <div class="faq-answer">Black Santa is the cutest and most engaging meme coin on the blockchain. It's a community-driven project dedicated to creating a fun, engaging ecosystem while supporting charitable causes worldwide.</div>
+    </div>
+  <!-- </section>   -->
+  <div class="faq-item" style="background-color: white; color: black;"> 
+    <div class="faq-question">When was Black Santa founded?</div>
+    <div class="faq-answer">Black Santa was founded in September 2024, originally branded as FluffCoin. As of September 16, 2024, we are now live with our new brand, Black Santa, evolving from our roots to bring even more joy, community engagement, and value. Our mission remains focused on building a strong, reputable brand and fostering a vibrant community in the crypto world.</div>
+</div>
+
+<div class="faq-item" style="background-color: white; color: black;">
+    <div class="faq-question">What makes Black Santa unique?</div>
+    <div class="faq-answer">Black Santa combines the light-hearted nature of memes with the serious potential of blockchain technology. We focus on community engagement, charitable initiatives, and financial opportunities for our holders.</div>
+</div>
+
+<div class="faq-item" style="background-color: white; color: black;">
+    <div class="faq-question">How does Black Santa support charitable causes?</div>
+    <div class="faq-answer">7% of our total supply is allocated to supporting community-focused causes globally. We partner with various organizations to provide funding for impactful initiatives, making a positive difference in the world.</div>
+</div>
+
+<div class="faq-item" style="background-color: white; color: black;">
+    <div class="faq-question">What is the total supply of Black Santa?</div>
+    <div class="faq-answer">The total supply of Black Santa is 1,000,000,000 BLACK SANTA tokens.</div>
+</div>
+
+<div class="faq-item" style="background-color: white; color: black;">
+    <div class="faq-question">How are the Black Santa tokens distributed?</div>
+    <div class="faq-answer">
+        Community Rewards: 10% (100,000,000 BLACK SANTA)<br>
+        Development and Marketing: 10% (100,000,000 BLACK SANTA)<br>
+        Charity and Donations: 5% (50,000,000 BLACK SANTA)<br>
+        Liquidity Pool: 15% (150,000,000 BLACK SANTA)<br>
+        Team Allocation: 10% (100,000,000 BLACK SANTA)<br>
+        Ecosystem Growth: 45% (450,000,000 BLACK SANTA)
+    </div>
+</div>
+
+<div class="faq-item" style="background-color: white; color: black;">
+    <div class="faq-question">What security measures are in place for Black Santa?</div>
+    <div class="faq-answer">Black Santa has achieved KYC certification through Assure DeFi, ensuring trust and credibility within our community. Additionally, our liquidity is locked, guaranteeing the stability and security of our token. We have also ensured that there are no more mintable tokens, providing peace of mind to holders by preventing any unexpected inflation of the supply.</div>
+</div>
+
+<div class="faq-item" style="background-color: white; color: black;">
+    <div class="faq-question">What are the future plans for Black Santa?</div>
+    <div class="faq-answer">
+        Our roadmap includes:<br>
+        - Expanded listings on more decentralized exchanges.<br>
+        - Launch of staking rewards once the community grows.<br>
+        - Implementation of multi-language support for global outreach.<br>
+        - Increased support for impactful community initiatives.
+    </div>
+</div>
+
+<!-- <center>
+    <a href="FAQ.HTML" class="buy-now-button">See More</a>
+</center> -->
+</div>
+
+<script>
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+            const answer = item.nextElementSibling;
+            item.classList.toggle('active');
+
+            if (item.classList.contains('active')) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                answer.style.opacity = 1;
+            } else {
+                answer.style.maxHeight = 0;
+                answer.style.opacity = 0;
+            }
+        });
+    });
+</script>
+
+
+
+<center>
+    <h2>OFFICIAL PARTNERS</h2>
+    <a href="https://dexscreener.com/solana/9vnynbh3a1avzcnrtyw8wp95jtqls1gka9gmf71isgbr"
+    style="cursor: pointer;">
+        <img src="images/dex_tools-removebg-preview.png" alt="" id="dex">
+    </a>
+</center>
+
+<footer class="footer-section">
+    <div class="footer-content">
+        <div class="footer-text">
+            <p>In Black Santa we trust, to the moon or bust! For memes, gains, and a cause so grand, together we’ll build a brand that’ll stand!</p>
+        </div>
+        <div class="footer-links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Roadmap</a></li>
+                <li><a href="#">How to Buy</a></li>
+                <li><a href="#">Whitepaper</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h2>Follow Us</h2>
+            <a href="https://x.com/santaemojionsol" target="_blank" class="social-icon">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://t.me/BlackSantaEmoji" target="_blank" class="social-icon">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+            <!-- <a href="https://www.instagram.com/blacksantainsta" target="_blank" class="social-icon">
+                <i class="fab fa-instagram"></i>
+            </a> -->
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year">2024</span> Black Santa Land. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function copyToClipboard() {
+        const address = "AKYkEmhcoGdgc7kEqTBzr8UjXc5Y6uPXnW7EKjaxAHim";
+        navigator.clipboard.writeText(address).then(() => {
+            const alertBox = document.getElementById("alert-box");
+            alertBox.style.display = "block";
+            setTimeout(() => {
+                alertBox.style.display = "none";
+            }, 3000);
+        }).catch(err => {
+            console.error("Failed to copy text: ", err);
+        });
+    }
+</script>
+
+<script src="scripts/navbar.js"></script>
+<script src="scripts/details.js"></script>
+<script src="scripts/year.js"></script>
+<script src="scripts/wallet.js"></script>
+
